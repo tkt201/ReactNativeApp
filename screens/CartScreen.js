@@ -21,7 +21,7 @@ const CartScreen = () => {
   const increaseQuantity = (item) => {
     dispatch(incementQuantity(item));
   };
-  const decreaseQuantit = (item) => {
+  const decreaseQuantity = (item) => {
     dispatch(decrementQuantity(item));
   };
   const deleteItem = (item) => {
@@ -161,7 +161,7 @@ const CartScreen = () => {
               >
                 {item?.quantity > 1 ? (
                   <Pressable
-                    onPress={() => increaseQuantity(item)}
+                    onPress={() => decreaseQuantity(item)}
                     style={{
                       backgroundColor: "#D8D8D8",
                       padding: 7,
