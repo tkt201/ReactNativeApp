@@ -68,49 +68,6 @@ const ConfirmationScreen = () => {
             console.log("errror", error);
         }
     };
-    // const pay = async () => {
-    //     try {
-    //         const options = {
-    //             description: "Adding To Wallet",
-    //             currency: "INR",
-    //             name: "Amazon",
-    //             key: "rzp_test_E3GWYimxN7YMk8",
-    //             amount: total * 100,
-    //             prefill: {
-    //                 email: "void@razorpay.com",
-    //                 contact: "9191919191",
-    //                 name: "RazorPay Software",
-    //             },
-    //             theme: { color: "#F37254" },
-    //         };
-
-    //         const data = await RazorpayCheckout.open(options);
-
-    //         console.log(data)
-
-    //         const orderData = {
-    //             userId: userId,
-    //             cartItems: cart,
-    //             totalPrice: total,
-    //             shippingAddress: selectedAddress,
-    //             paymentMethod: "card",
-    //         };
-
-    //         const response = await axios.post(
-    //             "http://192.168.1.5:8000/orders",
-    //             orderData
-    //         );
-    //         if (response.status === 200) {
-    //             navigation.navigate("Order");
-    //             dispatch(cleanCart());
-    //             console.log("order created successfully", response.data);
-    //         } else {
-    //             console.log("error creating order", response.data);
-    //         }
-    //     } catch (error) {
-    //         console.log("error", error);
-    //     }
-    // };
     return (
         <ScrollView style={{ marginTop: 55 }}>
             <View style={{ flex: 1, paddingHorizontal: 20, paddingTop: 40 }}>
